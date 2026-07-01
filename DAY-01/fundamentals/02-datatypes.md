@@ -63,11 +63,11 @@ echo "Healthy running servers remaining: $RUNNING_SERVERS"
 # ⚠️ The Rule / Condition
 Bash cannot naturally handle decimals (floating-point numbers like 3.5 or 99.9). If you attempt to run COST=10.5 and use it in standard Bash math loops, the script will crash. Bash integers must always be clean, whole numbers.
 
-## 3: Booleans (The Binary Switch)
+# 3: Booleans (The Binary Switch)
 Example
 Think of the main light switch in your bedroom. The switch only has two choices: it is either completely ON or completely OFF. There is no third option, and it cannot be half-on. It tells you the absolute truth about whether the light is working.
 
-### 📖 The Definition
+## 📖 The Definition
 A Boolean represents a binary logic state: it is either True or False. It is the ultimate checkpoint programs use to see if a specific requirement has been successfully met.
 
 ### 💻 DevOps Code Example
