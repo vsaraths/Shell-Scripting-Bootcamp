@@ -48,4 +48,48 @@ Now I am playing with my Red Racecar
     *   *Concept:* Store the target directory path.
     *   *Bash:* `TARGET_DIR="/var/log/nginx"`
     *   *Python:* `target_dir = "/var/log/nginx"`
+ 
+⚠️ The Rule: A variable name (the label) cannot start with a digit!
+
+Let’s break down exactly what works and what will break your script.
+
+1. Putting a Digit INSIDE the Box (Allowed! ✅)
+You can store numbers inside a variable all day long. This is incredibly useful for counting or holding values like ages or port numbers.
+
+Markdown
+<div><strong>💻 Terminal</strong></div>
+
+```bash
+# This works perfectly!
+AGE=30
+PORT=8080
+```
+2. Putting a Digit in the LABEL Name
+Can the name START with a digit? (No! ❌)
+If you try to start a variable name with a number, Bash gets completely confused and crashes.
+
+Markdown
+<div><strong>💻 Terminal</strong></div>
+
+```bash
+# ❌ THIS WILL CRASH:
+3rd_user="Sarath"
+```
+Why? Because Bash sees the 3 first and thinks you are trying to run a math operation or a special system command instead of making a new box.
+
+Can a digit be INSIDE or at the END of the name? (Yes! ✅)
+As long as the very first letter is a normal text character or an underscore (_), you can put numbers anywhere else you want in the name!
+
+Markdown
+<div><strong>💻 Terminal</strong></div>
+
+```bash
+# ✅ These work perfectly:
+user3="Sarath"
+server_2_ip="192.168.1.5"
+```
+💡 The One Exception: Special System Boxes ($1, $2)
+You might remember seeing $1 or $2 in our earlier examples. These look like variable names that start with numbers, but they are special system boxes built automatically by Linux.
+
+You cannot create them yourself using an = sign. Linux uses them to grab the inputs you type after the script name when running it (e.g., ./script.sh arg1 arg2).
 
