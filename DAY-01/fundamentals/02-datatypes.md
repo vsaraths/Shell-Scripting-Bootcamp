@@ -11,7 +11,7 @@ Imagine you have a label maker. You print out the word "SARATH" and stick it on 
 ## 📖 The Definition
 A String is a sequence of text characters (letters, symbols, spaces, or even numbers) wrapped inside quotation marks. The computer treats strings strictly as static text to be printed or read, never as mathematical digits.
 
-### 💻 DevOps Code Example###
+### 💻 DevOps Code Example
 
 Markdown
 <div><strong>💻 Terminal</strong></div>
@@ -28,7 +28,7 @@ Markdown
 echo "Connecting to $SERVER_NAME to inspect logs in $LOG_DIR"
 ```
 
-# ⚠️ The Rule / Condition#
+# ⚠️ The Rule / Condition
 **If you put quotation marks around a number, it becomes a string.**
 
 AGE=30 is a number you can do math with.
