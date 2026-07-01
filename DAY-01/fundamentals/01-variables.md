@@ -37,7 +37,7 @@ The computer opens the box again, but this time it prints:
 
 Now I am playing with my Red Racecar
 
-In DevOps and programming, we use these boxes all the time. Instead of toys, we put things like server names, IP addresses, or file paths inside them so we don't have to keep typing them over and over again.
+**In DevOps and programming, we use these boxes all the time. Instead of toys, we put things like server names, IP addresses, or file paths inside them so we don't have to keep typing them over and over again.**
 
 *   **What it is:** A named container used to store data that your program can reference, modify, or use later. It acts as the short-term memory of your script.
 *   **Why it matters:** Without variables, your scripts are rigid and hardcoded. If a server directory changes, you would have to manually rewrite it dozens of times. With a variable, you change it once at the top.
