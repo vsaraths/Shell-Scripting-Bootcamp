@@ -16,12 +16,14 @@ Here are the 6 absolute pillars of programming, explained with practical DevOps 
 Naming the box: You choose a name and put something inside it.
 
 Bash
+
 MyToy="Green Dinosaur"
 (Remember: In Bash scripting, the box hates spaces! You have to glue the name, the equals sign, and the toy together tightly.)
 
 Opening the box: When you want to show someone what's inside, you put a magic $ sign in front of the name. The $ sign tells the computer, "Open this box right now!"
 
 Bash
+
 echo "I am playing with my $MyToy"
 What the computer actually prints out:
 
@@ -31,6 +33,7 @@ The best part? You can change what's inside the box!
 Tomorrow, you get bored of the dinosaur. You throw it out of the box and put a "Red Racecar" inside the exact same box:
 
 Bash
+
 MyToy="Red Racecar"
 echo "Now I am playing with my $MyToy"
 The computer opens the box again, but this time it prints:
