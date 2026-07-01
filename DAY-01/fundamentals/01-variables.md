@@ -24,9 +24,9 @@ Opening the box: When you want to show someone what's inside, you put a magic $ 
 echo "I am playing with my $MyToy"
 ```
 What the computer actually prints out:
-
+```cmd
 I am playing with my Green Dinosaur
-
+```
 The best part? You can change what's inside the box!
 Tomorrow, you get bored of the dinosaur. You throw it out of the box and put a "Red Racecar" inside the exact same box:
 
