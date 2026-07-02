@@ -55,5 +55,5 @@ echo "🚀 Success! The application is officially UP and healthy."
 ```
 ⚠️ 4. The Rule / Condition / Constraints
 * The single biggest danger when writing loops is the Infinite Loop.
-This happens when you write a while loop, but the condition never becomes false. For example, if you write while [ 1 -eq 1 ], the number 1 will always equal 1. The computer will run that code forever, freezing your script and burning up 100% of your server's CPU muscle until someone manually forces it to stop with CTRL + C.
+* This happens when you write a while loop, but the condition never becomes false. For example, if you write while [ 1 -eq 1 ], the number 1 will always equal 1. The computer will run that code forever, freezing your script and burning up 100% of your server's CPU muscle until someone manually forces it to stop with CTRL + C.
 * Always ensure your while loop has an exit strategy or an update happening inside it!
