@@ -6,6 +6,8 @@
 
 * ### The FOR Loop: The park attendant hands you exactly 3 baseballs. You throw the first ball, then the second ball, then the third ball. Once the bucket is empty, you stop and walk away. You knew exactly how many times you were going to throw before you started.
 * ### The WHILE Loop: The attendant says, "Keep throwing balls WHILE the target is standing." You throw ball after ball after ball. If the target drops on the 2nd throw, you stop. If it takes 50 throws, you keep going. You don't know how many throws it will take; you just look at the target to decide when to stop.
+* ### A for loop looks at a predefined list, goes through the items one by one, and when it reaches the end of that list, it is done and exits automatically. It has a strict boundary from the start.
+* ### A while loop is relentless. It doesn't have a fixed list. It just keeps trying and trying over and over again until a specific goal or condition is finally reached.
 
 ## 📖 2. The Definition
 * ### A Loop is a programming structure that repeatedly executes a specific block of code.
