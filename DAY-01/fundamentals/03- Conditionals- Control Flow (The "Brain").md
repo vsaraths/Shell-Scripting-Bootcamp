@@ -39,5 +39,6 @@ fi
 In Bash scripting, the = sign is strictly used to assign a value into a variable box (e.g., USER="Sarath").
 When you are inside the conditional brackets [ ] comparing numbers, you must use flags like -eq (Equal to), -gt (Greater than), or -lt (Less than).
 If you try to write if [ $CURRENT_USER_ID = 0 ], Bash will treat the number zero like text, which can lead to silent errors or script crashes when handling infrastructure math!
-* Bash has very strict grammar rules 
-for conditionals that crash easily if missed:The Space Rule (Crucial): You must leave a space after the opening bracket [ and before the closing bracket ].if [ $A -gt $B ] ➔ Correct! ✅if [$A -gt $B] ➔ Crash! ❌ (Bash thinks [ is a command name instead of a bracket!)Special Flags for Math: Bash doesn't use standard symbols like > or < inside single brackets for numbers. It uses short letter codes:-gt = Greater Than (equivalent to $>$)-lt = Less Than (equivalent to $<$)-eq = Equal To (equivalent to $=$)
+* Bash has very strict grammar rules
+
+For conditionals that crash easily if missed:The Space Rule (Crucial): You must leave a space after the opening bracket [ and before the closing bracket ].if [ $A -gt $B ] ➔ Correct! ✅if [$A -gt $B] ➔ Crash! ❌ (Bash thinks [ is a command name instead of a bracket!)Special Flags for Math: Bash doesn't use standard symbols like > or < inside single brackets for numbers. It uses short letter codes:-gt = Greater Than (equivalent to $>$)-lt = Less Than (equivalent to $<$)-eq = Equal To (equivalent to $=$)
