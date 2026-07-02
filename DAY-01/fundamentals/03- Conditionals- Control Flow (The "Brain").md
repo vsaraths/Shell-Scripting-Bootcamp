@@ -11,11 +11,10 @@ If the answer is False, it completely ignores the if block and jumps down to exe
 
 ## 💻 3. DevOps Code Example
 Let’s take that exact video game logic and turn it into a real-world script you would use at a DevOps job.
-
 Instead of a game character checking for a "Golden Key," your script will check if a user has "Root (Administrator) Permissions" before letting them install software on a production server.
 
 Bash
-#!/bin/bash
+```#!/bin/bash
 
 # 1. Linux stores the current user ID in a built-in variable called $UID
 # The administrator (root) user always has a UID of 0.
@@ -33,13 +32,10 @@ else
     echo "❌ Error: Permission Denied! You must run this script using 'sudo'."
     exit 1
 fi
-⚠️ 4. The Rule / Condition / Constraints
-Why do we use -eq instead of an = sign in the example above?
-
+```
+## ⚠️ 4. The Rule / Condition / Constraints
+** Why do we use -eq instead of an = sign in the example above? **
 In Bash scripting, the = sign is strictly used to assign a value into a variable box (e.g., USER="Sarath").
-
 When you are inside the conditional brackets [ ] comparing numbers, you must use flags like -eq (Equal to), -gt (Greater than), or -lt (Less than).
-
 If you try to write if [ $CURRENT_USER_ID = 0 ], Bash will treat the number zero like text, which can lead to silent errors or script crashes when handling infrastructure math!
-
-Add this detailed example to your fundamentals.md file right under your main conditionals block to give your community members a second practical layer of understanding.
+### Bash has very strict grammar rules for conditionals that crash easily if missed:The Space Rule (Crucial): You must leave a space after the opening bracket [ and before the closing bracket ].if [ $A -gt $B ] ➔ Correct! ✅if [$A -gt $B] ➔ Crash! ❌ (Bash thinks [ is a command name instead of a bracket!)Special Flags for Math: Bash doesn't use standard symbols like > or < inside single brackets for numbers. It uses short letter codes:-gt = Greater Than (equivalent to $>$)-lt = Less Than (equivalent to $<$)-eq = Equal To (equivalent to $=$)
