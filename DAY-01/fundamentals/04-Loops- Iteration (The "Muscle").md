@@ -12,7 +12,7 @@
 * ### A For Loop repeats the code for a specific, predetermined number of items in a collection or list.
 * ### A While Loop repeats the code continuously based on a condition, running as long as that specific condition remains True, and stopping the moment it becomes False.
 
-##💻 3. DevOps Code Example
+## 💻 3. DevOps Code Example
 * DevOps engineers use loops daily to manage servers or process logs. Here is how both loops look in a production automation script:
 
 * ### The FOR Loop Example (Mass Operations)
