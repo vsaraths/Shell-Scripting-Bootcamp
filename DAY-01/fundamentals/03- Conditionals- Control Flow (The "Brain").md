@@ -4,10 +4,10 @@ ELSE (if you don't have the key) ➔ The door stays locked, and a message pops u
 Your character can't do both actions at once. The game checks what is in your inventory and forces you down one specific path.
 
 ## 📖 2. The Definition
-** This is where your script gets its brain. Without conditionals, your code just runs blindly from top to bottom like a falling rock. With conditionals, your script can look at a situation, think about it, and make a choice! **
-In programming, an If / Else Statement is a fork in the road. It forces the computer to look at a condition (a question) and answer it with either True or False.
-If the answer is True, it executes the code inside the if block.
-If the answer is False, it completely ignores the if block and jumps down to execute the code inside the else block instead.
+**This is where your script gets its brain. Without conditionals, your code just runs blindly from top to bottom like a falling rock. With conditionals, your script can look at a situation, think about it, and make a choice!**
+**In programming, an If / Else Statement is a fork in the road. It forces the computer to look at a condition (a question) and answer it with either True or False.**
+**If the answer is True, it executes the code inside the if block.**
+**If the answer is False, it completely ignores the if block and jumps down to execute the code inside the else block instead.**
 
 ## 💻 3. DevOps Code Example
 Let’s take that exact video game logic and turn it into a real-world script you would use at a DevOps job.
