@@ -8,9 +8,9 @@
 * ### The WHILE Loop: The attendant says, "Keep throwing balls WHILE the target is standing." You throw ball after ball after ball. If the target drops on the 2nd throw, you stop. If it takes 50 throws, you keep going. You don't know how many throws it will take; you just look at the target to decide when to stop.
 
 ## 📖 2. The Definition
-* A Loop is a programming structure that repeatedly executes a specific block of code.
-* A For Loop repeats the code for a specific, predetermined number of items in a collection or list.
-* A While Loop repeats the code continuously based on a condition, running as long as that specific condition remains True, and stopping the moment it becomes False.
+* ### A Loop is a programming structure that repeatedly executes a specific block of code.
+* ### A For Loop repeats the code for a specific, predetermined number of items in a collection or list.
+* ### A While Loop repeats the code continuously based on a condition, running as long as that specific condition remains True, and stopping the moment it becomes False.
 
 ##💻 3. DevOps Code Example
 * DevOps engineers use loops daily to manage servers or process logs. Here is how both loops look in a production automation script:
