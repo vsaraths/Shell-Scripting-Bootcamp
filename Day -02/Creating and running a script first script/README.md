@@ -19,14 +19,16 @@ To run a script, you must explicitly use the **`chmod` (Change Mode)** utility t
 Here are the terminal steps to create, modify, and run your first automation list sequence.
 
 ### Step A: See what permissions exist right now
-Run this command to check your target script file permissions:<img width="1709" height="902" alt="image" src="https://github.com/user-attachments/assets/1f194ca6-10d5-4b0b-8825-dcdd96a08045" />
+Run this command to check your target script file permissions:
 
 ```bash
 ls -la first.sh
 ```
-![Uploading image.png…]()
+<img width="1709" height="902" alt="image" src="https://github.com/user-attachments/assets/adc3a8d9-d1e2-4fe9-acca-49b41a1b25c2" />
+
 * Here we have used the following set of commands into out Text File
-```echo " Hello World "
+```
+echo " Hello World "
 echo " This is Harsh Thakkar "
 pwd
 ls
@@ -38,8 +40,10 @@ ls
 ls -la
 ```
 * To make our File Execute we use the following Command
-```chmod +x first.txt
+```
+chmod +x first.txt
 ```
 * To Execute out File, we use the following Command
-```./first.txt
+```
+./first.txt
 ```
