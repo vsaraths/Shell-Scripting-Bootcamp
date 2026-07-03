@@ -14,16 +14,13 @@ To run a script, you must explicitly use the **`chmod` (Change Mode)** utility t
 
 ---
 
-## 💻 3. DevOps Code Lab Example
+## 💻 3. Code Lab Example
 
 Here are the terminal steps to create, modify, and run your first automation list sequence.
 
 ### Step A: See what permissions exist right now
 Run this command to check your target script file permissions:
 
-```bash
-ls -la first.sh
-```
 <img width="1709" height="902" alt="image" src="https://github.com/user-attachments/assets/adc3a8d9-d1e2-4fe9-acca-49b41a1b25c2" />
 
 * Here we have used the following set of commands into out Text File
