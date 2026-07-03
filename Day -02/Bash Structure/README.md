@@ -34,9 +34,9 @@ echo " This is a live DevOps test script "
 sleep 30
 
 echo " Script process awoke and finalized successfully! "
+```
 <img width="1730" height="950" alt="image" src="https://github.com/user-attachments/assets/a47de702-7ccc-4acc-91ab-2595e60f4e10" />
 
-```
 ## Step B: Targeting Other Programming Languages
 * The shebang isn't limited to just Bash. You can point it to any installed script execution engine on a server, such as Python, Perl, or Ruby:
 ```
