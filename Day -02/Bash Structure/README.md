@@ -1,6 +1,6 @@
 # Day 2 / Concept 1: Mastering the Shebang (`#!`)
 
-## 👶 1. Child-Like Example
+## 👶 1. Example
 Imagine you write a secret letter, seal it in an envelope, and hand it to a mailman. But before he leaves, you must write a giant sticky note on the front of the envelope that says: *"Read this using a Bash dictionary!"* If you write a different letter in a different language, you change the note to say: *"Read this using a Python dictionary!"*
 
 The **Shebang** is that exact sticky note on line 1. It tells the operating system exactly which engine to wake up so it can read and execute the instructions written below it.
