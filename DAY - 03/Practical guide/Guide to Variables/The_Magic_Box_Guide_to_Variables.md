@@ -1,6 +1,6 @@
-# 📦 Day 4: The Magic Box Guide to Variables
+# 📦 Day 3: The Magic Box Guide to Variables
 
-Welcome to Day 4! Today we are going to learn how to create your own
+Welcome to Day 3! Today we are going to learn how to create your own
 **"magic boxes" (Variables)** from scratch, how to put things inside
 them, and how to look inside them later.
 
