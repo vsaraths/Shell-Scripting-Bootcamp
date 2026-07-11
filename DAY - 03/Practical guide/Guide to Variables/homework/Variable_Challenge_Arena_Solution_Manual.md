@@ -1,7 +1,7 @@
-# 🏁 Day 4: Variable Challenge Arena - Solution Manual
+# 🏁 Day 3: Variable Challenge Arena - Solution Manual
 
 This document contains the official answers, explanations, and expected
-outputs for all 15 Day 4 challenges. Use this to verify your scripts and
+outputs for all 15 Day 3 challenges. Use this to verify your scripts and
 learn the mechanics behind the code!
 
 ------------------------------------------------------------------------
@@ -146,7 +146,7 @@ echo "Hello, $1! Welcome to our GitHub repository!"
 ```
 
 **Execution**
-
+you need to pass the argument like this
 ``` bash
 ./greet_me.sh Sarath
 ```
