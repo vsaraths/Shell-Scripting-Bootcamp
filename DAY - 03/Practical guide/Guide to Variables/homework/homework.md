@@ -1,4 +1,4 @@
-# 🏆 Day 4: The Ultimate Variable Challenge Arena (15 Progressive Quests)
+# 🏆 Day 3: The Ultimate Variable Challenge Arena (15 Progressive Quests)
 
 Welcome to the Arena! This workbook takes you from an absolute beginner to a confident Bash script builder. 
 
