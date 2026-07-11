@@ -1,0 +1,269 @@
+# 🏁 Day 4: Variable Challenge Arena - Volume 2 Solution Manual
+
+This document provides the official answers, script architectures, and
+terminal output examples for challenges **16 through 35**.
+
+------------------------------------------------------------------------
+
+## 🟢 Level 6: User Interaction & Dynamic Echoes
+
+### Challenge 16: The Teleporter Prompt
+
+**Script (`teleport.sh`):**
+
+``` bash
+#!/bin/bash
+echo "Where do you want to teleport today?"
+read -r destination
+echo "✨ Teleporting you safely to $destination... Zoom!"
+```
+
+**Expected Output:**
+
+``` text
+Where do you want to teleport today?
+Mars
+✨ Teleporting you safely to Mars... Zoom!
+```
+
+### Challenge 17: Secret Passcode Input
+
+``` bash
+#!/bin/bash
+echo "Type your secret key:"
+read -s password
+echo "🔒 Password recorded safely in our variable box!"
+```
+
+### Challenge 18: Default Value Rescue
+
+``` bash
+#!/bin/bash
+# user_theme="Cyberpunk"
+echo "Active Theme: ${user_theme:-Dark Mode}"
+```
+
+------------------------------------------------------------------------
+
+## 🟡 Level 7: String Length & Slicing Magic
+
+### Challenge 19
+
+``` bash
+#!/bin/bash
+secret_word="Supercalifragilisticexpialidocious"
+echo "That word is exactly ${#secret_word} characters long!"
+```
+
+Expected:
+
+``` text
+That word is exactly 34 characters long!
+```
+
+### Challenge 20
+
+``` bash
+#!/bin/bash
+long_date="2026-07-11"
+year=${long_date:0:4}
+echo "The year extracted from the date is: $year"
+```
+
+### Challenge 21
+
+``` bash
+#!/bin/bash
+name=$1
+nickname=${name:0:3}
+echo "Your gaming nickname is: ${nickname}... Go get 'em!"
+```
+
+Run:
+
+``` bash
+./nickname.sh Sarath
+```
+
+Output:
+
+``` text
+Your gaming nickname is: Sar... Go get 'em!
+```
+
+------------------------------------------------------------------------
+
+## 🟠 Level 8
+
+### Challenge 22
+
+``` bash
+#!/bin/bash
+counter=1
+while [ $counter -le 5 ]; do
+  echo "High Five #$counter! 🖐️"
+  ((counter++))
+done
+```
+
+### Challenge 23
+
+``` bash
+#!/bin/bash
+timer=10
+while [ $timer -gt 0 ]; do
+  echo "$timer..."
+  ((timer--))
+  sleep 1
+done
+echo "🚀 BLAST OFF!"
+```
+
+### Challenge 24
+
+``` bash
+#!/bin/bash
+base=$1
+multiplier=5
+((product=base*multiplier))
+echo "$base times $multiplier equals $product"
+```
+
+------------------------------------------------------------------------
+
+## 🔴 Level 9
+
+### Challenge 25
+
+``` bash
+#!/bin/bash
+backup_folder="my_backups"
+if [ ! -d "$backup_folder" ]; then
+  echo "Directory not found. Creating $backup_folder..."
+  mkdir "$backup_folder"
+fi
+```
+
+### Challenge 26
+
+``` bash
+#!/bin/bash
+project="website"
+version=2
+filename="${project}_v${version}.tar.gz"
+echo "Backup target name config: $filename"
+```
+
+### Challenge 27
+
+``` bash
+#!/bin/bash
+echo "--- System Binary Search Paths ---"
+echo -e "${PATH//:/\n}"
+```
+
+------------------------------------------------------------------------
+
+## ⚡ Level 10
+
+### Challenge 28
+
+``` bash
+#!/bin/bash
+mkdir /protected_folder_xyz 2>/dev/null
+status=$?
+if ((status!=0)); then
+  echo "⚠️ Access Denied: You do not have permissions!"
+fi
+```
+
+### Challenge 29
+
+``` bash
+#!/bin/bash
+((choice=RANDOM%3+1))
+if ((choice==1)); then
+  server="prod-server-01"
+elif ((choice==2)); then
+  server="prod-server-02"
+else
+  server="prod-server-03"
+fi
+echo "Routing internet traffic dynamically to: $server"
+```
+
+### Challenge 30
+
+``` bash
+#!/bin/bash
+disk_used=87
+if ((disk_used>80)); then
+  echo "🚨 WARNING: Disk utilization is critical at $disk_used%!"
+fi
+```
+
+### Challenge 31
+
+``` bash
+#!/bin/bash
+if (( $# == 0 )); then
+  echo "❌ Error: This script requires at least 1 input argument to run!"
+  exit 1
+fi
+echo "Processing input: $1"
+```
+
+### Challenge 32
+
+``` bash
+#!/bin/bash
+skills="Linux,Docker,AWS,Ansible"
+OLD_IFS=$IFS
+IFS=","
+for skill in $skills; do
+  echo "🔧 Skill: $skill"
+done
+IFS=$OLD_IFS
+```
+
+### Challenge 33
+
+``` bash
+#!/bin/bash
+config_line="DB_PORT=5432"
+port=${config_line#*=}
+echo "The database port number found is: $port"
+```
+
+### Challenge 34
+
+``` bash
+#!/bin/bash
+readonly DEVOPS_ZONE="Production"
+echo "Current Environment Zone: $DEVOPS_ZONE"
+DEVOPS_ZONE="Staging"
+```
+
+Expected:
+
+``` text
+./lockdown.sh: line 6: DEVOPS_ZONE: readonly variable
+```
+
+### Challenge 35
+
+``` bash
+#!/bin/bash
+echo "Enter your preferred deployment name:"
+read -r app_name
+((server_id=RANDOM%100+1))
+echo "=========================================="
+echo "📊 DEPLOYMENT MONITOR CORE ACTIVATED"
+echo "=========================================="
+echo "User Node  : $USER"
+echo "Host Core  : $HOSTNAME"
+echo "App Target : $app_name"
+echo "Server Node: srv-${server_id}"
+echo "Status     : Verification reached at Line: $LINENO"
+echo "=========================================="
+```
