@@ -320,6 +320,31 @@ else
     echo "🌱 Access Granted: Welcome Apprentice! Keep learning!"
 fi
 ```
+### Positional Parameters: `$0`, `$1`, and `$2`
+
+In Bash scripting, these special built-in variables are automatically populated by the system based on what the user types in the terminal.
+
+*   **`$0`**: Represents the **name (or path) of the script itself** that is currently running (the "zeroth" argument).
+*   **`$1`**: Represents the **first argument** typed after the script name (in this case, the `Name`).
+*   **`$2`**: Represents the **second argument** typed after the script name (in this case, the `Birth Year`).
+
+#### Visual Breakdown:
+If you execute a script by typing:
+`./wizard2.sh sarath 1995`
+
+*   `$0` becomes `./wizard2.sh`
+*   `$1` becomes `sarath`
+*   `$2` becomes `1995`
+
+### 1. The Condition: `if [ -z "$user_name" ] || [ -z "$birth_year" ]; then`
+
+*   **`-z`**: This is a special Bash flag that stands for **"zero length"**. It checks if a variable is completely empty (blank).
+*   **`[ -z "$user_name" ]`**: This asks: *"Is the `user_name` variable empty?"*
+*   **`||`**: This is the logical **OR** operator.
+*   **`[ -z "$birth_year" ]`**: This asks: *"Is the `birth_year` variable empty?"*
+
+**In plain English:** 
+> *"If the name is missing **OR** the birth year is missing, then execute the following block of code..."*
 
 **Execution**
 
