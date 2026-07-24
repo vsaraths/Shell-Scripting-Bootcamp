@@ -283,6 +283,20 @@ version=2
 filename="${project}_v${version}.tar.gz"
 echo "Backup target name config: $filename"
 ```
+### 💡 The Everyday Analogy
+Imagine you have three separate magnetic word tiles on your fridge:
+
+* `website`
+* `_v`
+* `2`
+* `.tar.gz`
+
+If you snap them all together side by side, they spell out one single long file name: `website_v2.tar.gz`.
+
+---
+
+### 🛠️ What the Code Means Line-by-Line
+When variables sit right next to each other, Bash glues them together into one piece of text. We use curly braces `${}` around the variable names so Bash knows exactly where each variable name starts and ends.
 
 ### Challenge 27
 
@@ -291,6 +305,13 @@ echo "Backup target name config: $filename"
 echo "--- System Binary Search Paths ---"
 echo -e "${PATH//:/\n}"
 ```
+
+### Cleaning Up $PATH
+
+Your system variable `$PATH` holds a list of folders where the computer searches for commands. But by default, Bash squishes all those folder paths together on one single line separated by colons (`:`), like this:
+
+```text
+/usr/bin:/bin:/usr/sbin:/sbin
 
 ------------------------------------------------------------------------
 
