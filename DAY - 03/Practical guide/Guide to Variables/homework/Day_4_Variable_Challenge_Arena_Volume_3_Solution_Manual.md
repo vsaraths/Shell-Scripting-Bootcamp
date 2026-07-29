@@ -186,7 +186,8 @@ echo "Log repository generated: $log_file"
 
 ``` bash
 #!/bin/bash
-ping -c 1 8.8.8.8 > /dev/null 2>&1
+# Use -n 1 for Windows Git Bash instead of -c 1
+ping -n 1 8.8.8.8 > /dev/null 2>&1
 status=$?
 
 echo "=========================================="
