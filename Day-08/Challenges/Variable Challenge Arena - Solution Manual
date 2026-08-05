@@ -1,0 +1,53 @@
+## 🟠 Level 13: File Reading & Text Splitting
+
+### Challenge 41: The Empty String Emergency
+
+``` bash
+#!/bin/bash
+if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "⚠️ PARAMETER EMERGENCY: Missing critical inputs!"
+    echo "Usage: $0 [Parameter 1] [Parameter 2]"
+    exit 1
+fi
+
+echo "All variables loaded successfully: Input 1='$1', Input 2='$2'"
+```
+
+------------------------------------------------------------------------
+
+
+### Challenge 42: The Configuration Loader
+
+``` bash
+#!/bin/bash
+echo "production-server" > host.txt
+read -r active_host < host.txt
+echo "Target configuration environment loaded: $active_host"
+```
+
+### Challenge 43: The Secret Phrase Extracted
+
+``` bash
+#!/bin/bash
+sentence="Automate everything everywhere every day"
+total_matches=$(echo "$sentence" | grep -o "every" | wc -l)
+echo "The pattern prefix 'every' was isolated exactly $total_matches times."
+```
+
+### Challenge 44: Upper and Lower Case Transformers
+
+``` bash
+#!/bin/bash
+tool="ansible"
+CLOUD="AWS"
+
+echo "Shouting string: ${tool^^}"
+echo "Whispering string: ${CLOUD,,}"
+```
+
+**Expected Output**
+
+``` text
+Shouting string: ANSIBLE
+Whispering string: aws
+```
