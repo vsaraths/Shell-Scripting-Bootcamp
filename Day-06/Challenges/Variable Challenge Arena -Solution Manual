@@ -1,0 +1,103 @@
+## ⚡ Level 10
+
+### Challenge 28
+
+``` bash
+#!/bin/bash
+mkdir /protected_folder_xyz 2>/dev/null
+status=$?
+if ((status!=0)); then
+  echo "⚠️ Access Denied: You do not have permissions!"
+fi
+```
+
+### Challenge 29
+
+``` bash
+#!/bin/bash
+((choice=RANDOM%3+1))
+if ((choice==1)); then
+  server="prod-server-01"
+elif ((choice==2)); then
+  server="prod-server-02"
+else
+  server="prod-server-03"
+fi
+echo "Routing internet traffic dynamically to: $server"
+```
+
+### Challenge 30
+
+``` bash
+#!/bin/bash
+disk_used=87
+if ((disk_used>80)); then
+  echo "🚨 WARNING: Disk utilization is critical at $disk_used%!"
+fi
+```
+
+### Challenge 31
+
+``` bash
+#!/bin/bash
+if (( $# == 0 )); then
+  echo "❌ Error: This script requires at least 1 input argument to run!"
+  exit 1
+fi
+echo "Processing input: $1"
+```
+
+### Challenge 32
+
+``` bash
+#!/bin/bash
+skills="Linux,Docker,AWS,Ansible"
+OLD_IFS=$IFS
+IFS=","
+for skill in $skills; do
+  echo "🔧 Skill: $skill"
+done
+IFS=$OLD_IFS
+```
+
+### Challenge 33
+
+``` bash
+#!/bin/bash
+config_line="DB_PORT=5432"
+port=${config_line#*=}
+echo "The database port number found is: $port"
+```
+
+### Challenge 34
+
+``` bash
+#!/bin/bash
+readonly DEVOPS_ZONE="Production"
+echo "Current Environment Zone: $DEVOPS_ZONE"
+DEVOPS_ZONE="Staging"
+```
+
+Expected:
+
+``` text
+./lockdown.sh: line 6: DEVOPS_ZONE: readonly variable
+```
+
+### Challenge 35
+
+``` bash
+#!/bin/bash
+echo "Enter your preferred deployment name:"
+read -r app_name
+((server_id=RANDOM%100+1))
+echo "=========================================="
+echo "📊 DEPLOYMENT MONITOR CORE ACTIVATED"
+echo "=========================================="
+echo "User Node  : $USER"
+echo "Host Core  : $HOSTNAME"
+echo "App Target : $app_name"
+echo "Server Node: srv-${server_id}"
+echo "Status     : Verification reached at Line: $LINENO"
+echo "=========================================="
+```
