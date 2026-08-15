@@ -11,7 +11,7 @@ echo "Hello, ${name}! Welcome aboard."
 ```
 
 Answer 3.2
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -19,16 +19,17 @@ first="${1:-Varivettuchalil}"
 last="${2:-Sarath}"
 
 echo "Full Name: ${first} ${last}"
-
+```
 Answer 3.3
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
 echo "Total guests : $#"
 echo "Guest list   : $@"
+```
 Answer 3.4
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -36,8 +37,9 @@ level=1
 (( level++ ))
 
 echo "Leveled up! Current level: ${level}"
+```
 Answer 3.5
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -45,8 +47,9 @@ num="${1:-5}"
 (( result = num * 2 ))
 
 echo "Double of ${num} is ${result}"
+```
 Answer 3.6
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -54,15 +57,17 @@ loot="${1:-100}"
 (( share = loot / 4 ))
 
 echo "Total Loot: ${loot} | Share per player: ${share}"
+```
 Answer 3.7
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
 (( roll = RANDOM % 5 ))
 echo "Magic Dice Roll (0-4): ${roll}"
+```
 Answer 3.8
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -73,8 +78,9 @@ if [[ -f "${target}" ]]; then
 else
   echo "File Detective: '${target}' NOT found or is not a regular file."
 fi
+```
 Answer 3.9
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -86,8 +92,9 @@ if (( remainder == 0 )); then
 else
   echo "Number ${num} is ODD."
 fi
+```
 Answer 3.10
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
@@ -95,3 +102,4 @@ num="${1:-4}"
 (( square = num ** 2 ))
 
 echo "Square of ${num} is ${square}"
+```
