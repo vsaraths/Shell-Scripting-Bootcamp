@@ -2,12 +2,13 @@
 
 🟢 Beginner Answers (3.1 – 3.10)
 Answer 3.1
-Bash
+```Bash
 #!/bin/bash
 set -euo pipefail
 
 name="${1:-Sarath}"
 echo "Hello, ${name}! Welcome aboard."
+```
 
 Answer 3.2
 Bash
