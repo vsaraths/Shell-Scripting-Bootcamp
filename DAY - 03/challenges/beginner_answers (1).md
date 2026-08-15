@@ -8,6 +8,7 @@ set -euo pipefail
 
 name="${1:-Sarath}"
 echo "Hello, ${name}! Welcome aboard."
+
 Answer 3.2
 Bash
 #!/bin/bash
@@ -17,6 +18,7 @@ first="${1:-Varivettuchalil}"
 last="${2:-Sarath}"
 
 echo "Full Name: ${first} ${last}"
+
 Answer 3.3
 Bash
 #!/bin/bash
