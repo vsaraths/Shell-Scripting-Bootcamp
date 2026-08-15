@@ -8,7 +8,8 @@
 #### Create a script duo.sh that captures $1 (First Name) and $2 (Last Name) and prints "Full Name: $1 $2".
 
 ## Challenge 3.3: 
-#### Write a script party.sh that takes an arbitrary number of guest names passed as arguments and prints "Total guests: $#" and "Guest list: $@".
+#### Write a script party.sh that takes an arbitrary number of guest names passed as arguments and prints 
+```"Total guests: $#" and "Guest list: $@".```
 
 ## Challenge 3.4: 
 #### Write a script that takes a number variable level=1 and increments it by 1 using (( level++ )).
