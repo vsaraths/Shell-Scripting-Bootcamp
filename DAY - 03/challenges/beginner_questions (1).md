@@ -1,7 +1,8 @@
 # Beginner Questions
 
 🟢 Beginner (Challenges 3.1 – 3.10)
-Challenge 3.1: Write a script greet.sh that takes a name passed as $1 and prints "Hello, <$1>! Welcome aboard.".
+## Challenge 3.1: 
+### Write a script greet.sh that takes a name passed as $1 and prints "Hello, <$1>! Welcome aboard.".
 
 Challenge 3.2: Create a script duo.sh that captures $1 (First Name) and $2 (Last Name) and prints "Full Name: $1 $2".
 
